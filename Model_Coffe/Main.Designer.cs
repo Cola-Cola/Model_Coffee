@@ -37,6 +37,9 @@
             this.MakeModel_btn = new System.Windows.Forms.Button();
             this.formsPlot2 = new ScottPlot.FormsPlot();
             this.Add_model = new System.Windows.Forms.Button();
+            this.formsPlot1 = new ScottPlot.FormsPlot();
+            this.formsPlot3 = new ScottPlot.FormsPlot();
+            this.formsPlot4 = new ScottPlot.FormsPlot();
             this.SuspendLayout();
             // 
             // WaterTemp_txtBx
@@ -45,6 +48,7 @@
             this.WaterTemp_txtBx.Name = "WaterTemp_txtBx";
             this.WaterTemp_txtBx.Size = new System.Drawing.Size(100, 20);
             this.WaterTemp_txtBx.TabIndex = 0;
+            this.WaterTemp_txtBx.Text = "88";
             this.WaterTemp_txtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WaterTemp_txtBx_KeyPress);
             // 
             // label1
@@ -83,6 +87,7 @@
             this.AirTeamp_txtBx.Name = "AirTeamp_txtBx";
             this.AirTeamp_txtBx.Size = new System.Drawing.Size(100, 20);
             this.AirTeamp_txtBx.TabIndex = 5;
+            this.AirTeamp_txtBx.Text = "22";
             this.AirTeamp_txtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AirTeamp_txtBx_KeyPress);
             // 
             // k_txtBx
@@ -91,6 +96,7 @@
             this.k_txtBx.Name = "k_txtBx";
             this.k_txtBx.Size = new System.Drawing.Size(100, 20);
             this.k_txtBx.TabIndex = 7;
+            this.k_txtBx.Text = "0,1";
             this.k_txtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.k_txtBx_KeyPress);
             // 
             // MakeModel_btn
@@ -106,12 +112,9 @@
             // 
             // formsPlot2
             // 
-            this.formsPlot2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formsPlot2.Location = new System.Drawing.Point(325, 13);
+            this.formsPlot2.Location = new System.Drawing.Point(965, 12);
             this.formsPlot2.Name = "formsPlot2";
-            this.formsPlot2.Size = new System.Drawing.Size(1037, 614);
+            this.formsPlot2.Size = new System.Drawing.Size(640, 318);
             this.formsPlot2.TabIndex = 10;
             // 
             // Add_model
@@ -125,11 +128,35 @@
             this.Add_model.UseVisualStyleBackColor = true;
             this.Add_model.Click += new System.EventHandler(this.Add_model_Click);
             // 
+            // formsPlot1
+            // 
+            this.formsPlot1.Location = new System.Drawing.Point(307, 12);
+            this.formsPlot1.Name = "formsPlot1";
+            this.formsPlot1.Size = new System.Drawing.Size(640, 319);
+            this.formsPlot1.TabIndex = 12;
+            // 
+            // formsPlot3
+            // 
+            this.formsPlot3.Location = new System.Drawing.Point(307, 359);
+            this.formsPlot3.Name = "formsPlot3";
+            this.formsPlot3.Size = new System.Drawing.Size(640, 318);
+            this.formsPlot3.TabIndex = 13;
+            // 
+            // formsPlot4
+            // 
+            this.formsPlot4.Location = new System.Drawing.Point(965, 359);
+            this.formsPlot4.Name = "formsPlot4";
+            this.formsPlot4.Size = new System.Drawing.Size(640, 318);
+            this.formsPlot4.TabIndex = 14;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1374, 639);
+            this.ClientSize = new System.Drawing.Size(1617, 689);
+            this.Controls.Add(this.formsPlot4);
+            this.Controls.Add(this.formsPlot3);
+            this.Controls.Add(this.formsPlot1);
             this.Controls.Add(this.Add_model);
             this.Controls.Add(this.formsPlot2);
             this.Controls.Add(this.MakeModel_btn);
@@ -157,6 +184,9 @@
         private System.Windows.Forms.Button MakeModel_btn;
         private ScottPlot.FormsPlot formsPlot2;
         private System.Windows.Forms.Button Add_model;
+        private ScottPlot.FormsPlot formsPlot1;
+        private ScottPlot.FormsPlot formsPlot3;
+        private ScottPlot.FormsPlot formsPlot4;
     }
 }
 
